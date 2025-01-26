@@ -43,6 +43,30 @@ void sec(int arr[],int n)
 	cout<<"second largest is"<<seclarge<<endl;
 }
 
+int secondsmall(int arr[], int n)
+{
+	if(n>2)
+	{
+		return -1;
+	}
+	int small = INT_MAX;
+	int secsmall = INT_MAX;
+	int i;
+	for(i=0; i<n; i++)
+	{
+		if(arr[i]<small)
+		{
+			secsmall = small;
+			small = arr[i];
+		}
+		else if(arr[i]<secsmall && arr[i]!=small)
+		{
+			secsmall = arr[i];
+		}
+	}
+	return secsmall;
+}
+
 void print(int arr[], int n)
 {
 	for(int i=0; i<n; i++)
