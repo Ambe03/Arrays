@@ -28,16 +28,13 @@ vector<int> move(vector<int> arr, int n)
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 void move(int arr[], int n) {
-    int j = 0;  // Pointer to track the position of the next non-zero element
-
-    // First, place all non-zero elements in the beginning of the array
+    int j = 0;   
     for (int i = 0; i < n; i++) {
         if (arr[i] != 0) {
             arr[j++] = arr[i];
         }
     }
 
-    // Now, place zeros at the end of the array
     for (int i = j; i < n; i++) {
         arr[i] = 0;
     }
