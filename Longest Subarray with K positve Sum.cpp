@@ -20,7 +20,7 @@ int kSum(int arr[], int n, int ksm)
 	return len;
 }
 
-//=======================================================================
+//====================OPTIMAL FOR +VE AND -VES ===================================================
 int Ksum(int arr[], int n, int ksm)
 {
 	map<int, int> presum;
@@ -49,7 +49,7 @@ int Ksum(int arr[], int n, int ksm)
 	return maxlen;
 }
 
-//==================================================================================
+//===============================OPTIMAL FOR +VES AND ZEROES===================================================
 
 int optsum(int arr[], int n, int k)
 {
